@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+   
+}
+body{
+    overflow-x: hidden;
+}
+.bg{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url("https://img5.goodfon.com/wallpaper/nbig/7/3b/gory-khrebty-les.jpg") ;
+    background-size:100% 100% ;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.nov-bar{
+    position: sticky;
+    top: 0;
+    font-family: 'Merienda', cursive;
+    background-color: #2d3436;
+    font-size: 10px;  
+    z-index: 4;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 18px;
+}
+.navbar-brand h1{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    text-align: center;
+   font-size: 35px;
+   font-weight: bold;
+}
+.menu-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-item{
+    margin-left:40px;
+}
+
+.navbar-brand h1::after{
+    content: " Pakistan";
+    color: #009432;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+#navbarNav li a{
+    color: #00cec9;
+    font-size: 17px;
+    padding: 5px 0px;
+    letter-spacing: 2px;
+    font-family: 'Merienda', cursive;
+}
+#navbarNav li a:hover{
+    border-bottom: 1px solid #dddddd;
+}
+#main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; 
+color: white;   
+}
+#section h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #2d3436;
+    letter-spacing: 3px;
+}
+#section h3{
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px black;
+}
+#section p{
+    font-size: 30px;
+    word-spacing: 20px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 25px;
+}
+#section a{
+    text-decoration: none;
+    outline: none;
+    width: 60px;
+    text-transform: uppercase;
+    background-color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+#section #btn1{
+    color: black;
+}
+#section #btn2{
+    background-color:#00cec9 ;
+    color: white;
+}
+#change-contents:after{
+content: "";
+animation: change 10s infinite linear;
+color: #00cec9;
+}
+@keyframes change{
+    0%{content:"THAR";}
+    20%{content: "KASHMIR";}
+    40%{content: "KAGHAN";}
+    60%{content: "FAISAL MASJID";}
+    80%{content: "TAXILA";}
+    100%{content: "ZIARAT";}
+}
+
+/* .......GALLERY....... */
+.card{
+    cursor: pointer;
+   
+}
+
+.card-img{
+    /* filter: grayscale(0.55); */
+    transition: .3s linear;
+}
+.card:hover{
+  background-color: #82ccdd;
+  color: white;
+}
+.card-title{
+    color:#0a3d62;
+    font-weight: bold;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 2px;
+}
+.g-head{
+    margin: 0px auto;
+    /* background-color: aliceblue; */
+    font-family: 'Merienda', cursive;
+    margin-bottom: 100px;
+    margin-top: 30px;
+
+}
+.g-head::before{
+    content: "";
+    background: #1289A7 ;
+    height: 2px;
+    width: 300px;
+    margin:  auto;
+    display: block;
+    transform: translateY(63px);
+    
+}
+/* .g-head::after{
+    content: "";
+    background: #009432 ;
+    height: 5px;
+    width: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(11px);
+    } */
+
+
+    /* .....TRAVELLERS.... */
+    #travel{
+        margin: 100px auto;
+    }
+    .traveller {
+        width: 200px;
+        height: 190px;
+        border-radius: 23px;
+        padding: 10px;
+    }
+    .box{
+        cursor: pointer;
+    }
+    .box:hover{
+        background-color: #dddddd;
+      
+    }
+
+
+        /* ...........BOOKING............ */
+
+.banner{
+        width:100%;
+        height: 80vh;
+        background-image: url("https://4kwallpaper.wiki/wp-content/uploads/2019/09/365963.jpg");
+        background-size: cover ;
+        padding-top: 10%;
+        margin-top: 100px;
+        background-position: center;
+        background-attachment: fixed;
+        margin: auto;
+    }
+ .banner p, h1, button{
+    font-family: 'Merienda', cursive;
+ }   
+    .highlight{
+        width: 100%;
+        padding:60px 0;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        text-align: center;
+        
+
+    }
+    .booking-btn{
+        width: 120px;
+        padding: 8px 0;
+        outline: none;
+        border: 2px solid white;
+        color: white;
+        border-radius: 50px;
+        background: transparent;
+
+    }
+    .booking-btn:hover{
+        background-color: white;
+        color: green;
+    }
+
+    /* ........Contact Us........ */
+
+
+    .social-icons img{
+        margin: 10px;
+        transition: 0.3s;
+        color: white;
+        text-shadow:  5px 10px 5px #16a085;
+        width: 100px;
+    }
+    
+    .social-icons a:hover img{
+        transform: translateY(-10px);
+    }
+    
+    /* .......FOOTER...... */
+    #footer p{
+        color:#2c3e50;
+      font-family: 'Merienda', cursive; 
+    }
+
+/* ............RESPONSIVENESS........ */
+
+
+/* Large size */
+@media (min-width:992px){    
+   
+}
+
+ /* Medium size */
+@media (min-width:768px) and (max-width:991px){                 
+    #main{
+        width: 100%;
+        height: 75vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;   
+    }
+    #section h2{
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #2d3436;
+        letter-spacing: 3px;
+    }
+    #section h3{
+        font-size: 50px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px black;
+        height: 100px;
+    }
+    #section p{
+        font-size: 20px;
+        word-spacing: 5px;
+        text-shadow: 1px 1px 1px black;
+        margin-bottom: 15px;
+    }           
+
+}
+
+/* Large size */
+@media (min-width:575px) and (max-width:767px){                 
+    #main{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;   
+    }
+    #section h2{
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #2d3436;
+        letter-spacing: 3px;
+    }
+    #section h3{
+        font-size: 40px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px black;
+        height: 100px;
+    }
+    #section p{
+        font-size: 15px;
+        word-spacing: 5px;
+        text-shadow: 1px 1px 1px black;
+        margin-bottom: 15px;
+    }           
+} 
+@media (min-width:480px) and (max-width:574px){
+    #main{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;   
+    margin-top: 20px;
+    }
+    .navbar-brand h1{
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        text-align: center;
+       font-size: 25px;
+    }
+    #section h2{
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #2d3436;
+        letter-spacing: 3px;
+    }
+    #section h3{
+        font-size: 32px;
+        height: 100px;
+    }
+    #section p{
+        font-size: 20px;
+        word-spacing: 5px;
+        margin-bottom: 5px;
+    }           
+
+}
+
+/* ....Potrait Mode.... */
+@media (max-width:479px){
+    #main{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;   
+    }
+    #section h2{
+        font-size: 10px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #2d3436;
+        letter-spacing: 3px;
+    }
+    #section h3{
+        font-size: 20px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px black;
+        height: 100px;
+    }
+    #section p{
+        font-size: 16px;
+        word-spacing: 5px;
+        text-shadow: 1px 1px 1px black;
+        margin-bottom: 5px;
+    }
+    #section a{
+        text-decoration: none;
+        outline: none;
+        width: 60px;
+        text-transform: uppercase;
+        background-color: white;
+        padding:5px 10px;
+        border-radius: 5px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+    #section #btn1{
+        color: black;
+    }
+    #section #btn2{
+        background-color:#00cec9 ;
+        color: white;
+    }
+
+}
